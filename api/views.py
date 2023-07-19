@@ -1,11 +1,11 @@
 from django.shortcuts import render
-
+from django.shortcuts import render
 # Create your views here.
 
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from .models import Video, Subtitle
-from .serializers import SubtitleSerializer
+from .serializer import SubtitleSerializer
 
 
 @api_view(['POST'])
